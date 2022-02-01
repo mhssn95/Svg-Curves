@@ -1,0 +1,38 @@
+nav {
+    margin-left: -4em;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2em;
+}
+
+li {
+    padding: 0.8em 4em;
+}
+
+li>a {
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.selected {
+    background-color: #E7E7E7;
+}
