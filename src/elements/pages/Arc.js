@@ -83,7 +83,7 @@ export default function Arc() {
                     options.delete(0)
                     setOptions(new Set(options))
                 }
-            }}/> A {round(r[0])} {round(r[1])} {round(rotation)} {largeArc} {sweep} {round(end[0])} {round(end[1])}</p>
+            }}/>M {round(m[0])} {round(m[1])} A {round(r[0])} {round(r[1])} {round(rotation)} {largeArc} {sweep} {round(end[0])} {round(end[1])}</p>
 
             <p style={{
                 color: "rgba(0,117,255,1)"
@@ -95,7 +95,7 @@ export default function Arc() {
                     setOptions(new Set(options))
                 }
             }}
-            /> A {round(r[0])} {round(r[1])} {round(rotation)} 1 {sweep} {round(end[0])} {round(end[1])}
+            />M {round(m[0])} {round(m[1])} A {round(r[0])} {round(r[1])} {round(rotation)} 1 {sweep} {round(end[0])} {round(end[1])}
             </p>
 
             <p style={{
@@ -107,7 +107,7 @@ export default function Arc() {
                     options.delete(2)
                     setOptions(new Set(options))
                 }
-            }}/> A {round(r[0])} {round(r[1])} {round(rotation)} {largeArc} 1 {round(end[0])} {round(end[1])}
+            }}/>M {round(m[0])} {round(m[1])} A {round(r[0])} {round(r[1])} {round(rotation)} {largeArc} 1 {round(end[0])} {round(end[1])}
             </p>
 
         </div>
