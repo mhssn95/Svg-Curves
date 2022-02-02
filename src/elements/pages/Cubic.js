@@ -47,15 +47,15 @@ export default function Cubic() {
                     d={`M${m[0]},${m[1]} C${startControl[0]},${startControl[1]} ${endControl[0]},${endControl[1]} ${end[0]},${end[1]}`}
                     fill={"transparent"} stroke={"black"} strokeWidth={"4px"}/>
                 <line x1={m[0]} y1={m[1]} x2={startControl[0]} y2={startControl[1]} stroke={"red"} strokeWidth={"2px"}/>
-                <line x1={end[0]} y1={end[1]} x2={endControl[0]} y2={endControl[1]} stroke={"red"} strokeWidth={"2px"}/>
+                <line x1={end[0]} y1={end[1]} x2={endControl[0]} y2={endControl[1]} stroke={"orange"} strokeWidth={"2px"}/>
                 <circle cx={`${m[0]}`} cy={`${m[1]}`} r={4} fill={"blue"}/>
                 <circle cx={`${end[0]}`} cy={`${end[1]}`} r={4} fill={"blue"}/>
                 <circle cx={`${startControl[0]}`} cy={`${startControl[1]}`} r={3} fill={"red"}/>
-                <circle cx={`${endControl[0]}`} cy={`${endControl[1]}`} r={3} fill={"red"}/>
+                <circle cx={`${endControl[0]}`} cy={`${endControl[1]}`} r={3} fill={"orange"}/>
             </svg>
-            <p style={{
-                margin: "4em"
-            }}>M {round(m[0])} {round(m[1])} C {round(startControl[0])} {round(startControl[1])} {round(endControl[0])} {round(endControl[1])} {round(end[0])} {round(end[1])}</p>
+            <p className={"svg-text"} style={{
+                margin: "2em"
+            }}>M {round(m[0])} {round(m[1])} <span className={"blue"}>C</span> <span className={"red"}>{round(startControl[0])} {round(startControl[1])}</span> <span className={"orange"}>{round(endControl[0])} {round(endControl[1])}</span> {round(end[0])} {round(end[1])}</p>
         </div>
     )
 }

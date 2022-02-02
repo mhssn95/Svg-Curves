@@ -29,3 +29,19 @@
     background-color: #f3f3f3;
     margin-top: 10em;
 }
+
+.svg-text {
+    font-size: 2em;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}

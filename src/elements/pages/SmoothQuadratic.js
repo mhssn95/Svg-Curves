@@ -71,9 +71,9 @@ export default function SmoothQuadratic() {
                 <circle cx={`${end[0]}`} cy={`${end[1]}`} r={4} fill={"blue"}/>
                 <circle cx={`${smoothEnd[0]}`} cy={`${smoothEnd[1]}`} r={4} fill={"blue"}/>
             </svg>
-            <p style={{
-                margin: "4em"
-            }}>M {round(m[0])} {round(m[1])} Q {round(startControl[0])} {round(startControl[1])} {round(end[0])} {round(end[1])} T {round(smoothEnd[0])} {round(smoothEnd[1])}</p>
+            <p className={"svg-text"} style={{
+                margin: "2em"
+            }}>M {round(m[0])} {round(m[1])} Q <span className={"red"}>{round(startControl[0])} {round(startControl[1])}</span> {round(end[0])} {round(end[1])} <span className={"blue"}>T</span> {round(smoothEnd[0])} {round(smoothEnd[1])}</p>
         </div>
     )
 }

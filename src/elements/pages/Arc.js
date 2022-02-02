@@ -73,8 +73,9 @@ export default function Arc() {
             }} type={"number"} placeholder={"rotation"} defaultValue={rotation} onChange={(e)=> {
                 setRotation(e.target.value)
             }}/>
-            <p style={{
-                marginTop: "2em",
+            <p className={"svg-text"} style={{
+                marginTop: "1.5em",
+                fontSize: "1.5em",
                 color: "rgb(0,183,0)"
             }}><input type={"checkbox"} defaultChecked={true} onChange={(e) => {
                 if (e.target.checked) {
@@ -85,8 +86,9 @@ export default function Arc() {
                 }
             }}/>M {round(m[0])} {round(m[1])} A {round(r[0])} {round(r[1])} {round(rotation)} {largeArc} {sweep} {round(end[0])} {round(end[1])}</p>
 
-            <p style={{
-                color: "rgba(0,117,255,1)"
+            <p className={"svg-text"} style={{
+                color: "rgba(0,117,255,1)",
+                fontSize: "1.5em",
             }}><input type={"checkbox"} defaultChecked={false} onChange={(e) => {
                 if (e.target.checked) {
                     setOptions(new Set(options.add(1)))
@@ -98,8 +100,9 @@ export default function Arc() {
             />M {round(m[0])} {round(m[1])} A {round(r[0])} {round(r[1])} {round(rotation)} 1 {sweep} {round(end[0])} {round(end[1])}
             </p>
 
-            <p style={{
-                color: "rgba(200,0,0,0.47)"
+            <p className={"svg-text"} style={{
+                color: "rgba(200,0,0,0.47)",
+                fontSize: "1.5em",
             }}><input type={"checkbox"} defaultChecked={false} onChange={(e) => {
                 if (e.target.checked) {
                     setOptions(new Set(options.add(2)))

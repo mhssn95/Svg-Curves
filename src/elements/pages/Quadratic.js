@@ -48,9 +48,9 @@ export default function Quadratic() {
                 <circle cx={`${m[0]}`} cy={`${m[1]}`} r={4} fill={"blue"}/>
                 <circle cx={`${end[0]}`} cy={`${end[1]}`} r={4} fill={"blue"}/>
             </svg>
-            <p style={{
-                margin: "4em"
-            }}>M {round(m[0])} {round(m[1])} Q {round(startControl[0])} {round(startControl[1])} {round(end[0])} {round(end[1])}</p>
+            <p className={"svg-text"} style={{
+                margin: "2em"
+            }}>M {round(m[0])} {round(m[1])} <span className={"blue"}>Q</span> <span className={"red"}>{round(startControl[0])} {round(startControl[1])}</span> {round(end[0])} {round(end[1])}</p>
         </div>
     )
 }

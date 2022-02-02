@@ -63,22 +63,22 @@ export default function SmoothCubic() {
                 <line x1={m[0]} y1={m[1]} x2={startControl[0]} y2={startControl[1]} stroke={"red"} strokeWidth={"2px"}/>
                 <line x1={end[0]} y1={end[1]} x2={endControl[0]} y2={endControl[1]} stroke={"red"} strokeWidth={"2px"}/>
                 <line x1={smoothEnd[0]} y1={smoothEnd[1]} x2={smoothEndControl[0]} y2={smoothEndControl[1]}
-                      stroke={"blue"} strokeWidth={"2px"}/>
+                      stroke={"orange"} strokeWidth={"2px"}/>
                 <line strokeDasharray="5,5" x1={end[0]} y1={end[1]} x2={reflect(endControl[0], end[0])}
                       y2={reflect(endControl[1], end[1])}
                       stroke={"blue"} strokeWidth={"2px"}/>
                 <circle cx={`${endControl[0]}`} cy={`${endControl[1]}`} r={3} fill={"red"}/>
                 <circle cx={`${startControl[0]}`} cy={`${startControl[1]}`} r={3} fill={"red"}/>
-                <circle cx={`${smoothEndControl[0]}`} cy={`${smoothEndControl[1]}`} r={3} fill={"blue"}/>
+                <circle cx={`${smoothEndControl[0]}`} cy={`${smoothEndControl[1]}`} r={3} fill={"orange"}/>
                 <circle cx={`${reflect(endControl[0], end[0])}`} cy={`${reflect(endControl[1], end[1])}`} r={3}
                         fill={"blue"}/>
                 <circle cx={`${m[0]}`} cy={`${m[1]}`} r={4} fill={"blue"}/>
                 <circle cx={`${end[0]}`} cy={`${end[1]}`} r={4} fill={"blue"}/>
                 <circle cx={`${smoothEnd[0]}`} cy={`${smoothEnd[1]}`} r={4} fill={"blue"}/>
             </svg>
-            <p style={{
-                margin: "4em"
-            }}>M {round(m[0])} {round(m[1])} C {round(startControl[0])} {round(startControl[1])} {round(endControl[0])} {round(endControl[1])} {round(end[0])} {round(end[1])} S {round(smoothEndControl[0])} {round(smoothEndControl[1])} {round(smoothEnd[0])} {round(smoothEnd[1])}</p>
+            <p className={"svg-text"} style={{
+                margin: "2em"
+            }}>M {round(m[0])} {round(m[1])} C {round(startControl[0])} {round(startControl[1])} <span className={"red"}>{round(endControl[0])} {round(endControl[1])}</span> {round(end[0])} {round(end[1])} <span className={"blue"}>S</span> <span className={"orange"}>{round(smoothEndControl[0])} {round(smoothEndControl[1])}</span> {round(smoothEnd[0])} {round(smoothEnd[1])}</p>
         </div>
     )
 }
