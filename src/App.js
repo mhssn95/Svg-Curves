@@ -20,7 +20,7 @@ function App() {
                   <p style={{
                       marginTop: '8em',
                       color: '#606060'
-                  }}>made with ❤️ by mhssn.</p>
+                  }}>made with ❤️ by mhssn</p>
                   <a href={"https://twitter.com/mhssn95"}><Twitter style={{
                       width:'15px',
                       marginRight: '7px'
